@@ -3,12 +3,10 @@
 
 import React, { useState } from 'react'
 import Carousel from '@itseasy21/react-elastic-carousel';
-import H6 from './H6';
 import H7 from './H7';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
-import H2 from './H2';
 
 function Carousal({ items, itemsToShow, customArrow, component }) {
 
@@ -65,17 +63,14 @@ function Carousal({ items, itemsToShow, customArrow, component }) {
                     ) : (
 
                         <div key={index} className='flex flex-col justify-center items-center m-5 space-y-4'>
-                            {/* <img src={item.src} alt={item.src} className='object-cover' /> */}
-                            <Image src={item.image} width={800} height={800} className={`object-cover ${component != 'trending' ? 'md:h-[400px] md:w-[600px] h-52 ' : ' md:w-[600px] md:h-[280px] h-52  '}rounded-3xl`} alt='img' />
+                            <Image src={component === 'propertyDetails' ? item.url : item.image} width={800} height={800} className={`object-cover ${component != 'trending' ? 'md:h-[400px] md:w-[700px] h-52 ' : ' md:w-[600px] md:h-[280px] h-52  '}rounded-3xl`} alt='img' />
                             <div className='w-2/3 '>
-                                {/* <h1>{item.title}</h1> */}
                                 <H7 text={item.title} color={'text-white'} />
                             </div>
                         </div>
                     )
                 ))
                 }
-                {/* {items.map(item, index => <div key={index}>{item.src}</div>)} */}
             </Carousel >
         </div >
     )

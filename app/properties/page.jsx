@@ -6,19 +6,17 @@ import React, { useEffect, useState } from 'react'
 import H6 from '../components/H6'
 import H7 from '../components/H7'
 import DropDown from '../components/DropDown'
+import { useRouter } from 'next/navigation'
 
 function page() {
 
-
-    // const dropDownItems = [
-    //     'New arrival',
-    //     'Popular',
-    //     'Top'
-    // ]
     const [dropDownItems, setDropDownItems] = useState([])
     const [fetchedData, setFetchedData] = useState(null)
     const [selectedTab, setSelectedTab] = useState(null)
     const [filterProperty, setFilteredProperty] = useState(null)
+
+
+    const router = useRouter()
 
     useEffect(() => {
         userAxios.get('/property').then((res) => {
@@ -44,7 +42,6 @@ function page() {
 
 
 
-    // console.log(fetchedData, filterProperty)
 
 
     return (
@@ -57,7 +54,7 @@ function page() {
 
                 {filterProperty ? filterProperty.map((item, index) => (
 
-                    <div key={index} className="max-w-xs h-[450px] bg-[#121C37] rounded-3xl hover:shadow-lg p-5 transition-transform hover:scale-105 cursor-pointer bg-opacity-95 hover:bg-opacity-100 ">
+                    <div key={index} onClick={() => router.push(`/propertyDetails?id=${item._id}`)} className="max-w-xs h-[450px] bg-[#121C37] rounded-3xl hover:shadow-lg p-5 transition-transform hover:scale-105 cursor-pointer bg-opacity-95 hover:bg-opacity-100 ">
                         <a >
                             < Image className="rounded-t-lg h-52 w-72 rounded-xl" src={item.image} alt="" width={300} height={300} />
                         </a>
@@ -77,7 +74,7 @@ function page() {
                     :
                     fetchedData?.map((item, index) => (
 
-                        <div key={index} className="max-w-xs h-[450px] bg-[#121C37] rounded-3xl hover:shadow-lg p-5 transition-transform hover:scale-105 cursor-pointer bg-opacity-95 hover:bg-opacity-100 ">
+                        <div key={index} onClick={() => router.push(`/propertyDetails?id=${item._id}`)} className="max-w-xs h-[450px] bg-[#121C37] rounded-3xl hover:shadow-lg p-5 transition-transform hover:scale-105 cursor-pointer bg-opacity-95 hover:bg-opacity-100 ">
                             <a >
                                 < Image className="rounded-t-lg h-52 w-72 rounded-3xl" src={item.image} alt="" width={300} height={300} />
                             </a>
