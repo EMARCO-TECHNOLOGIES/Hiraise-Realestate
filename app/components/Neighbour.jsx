@@ -7,13 +7,7 @@ import Image from 'next/image'
 
 function Neighbour() {
 
-    const images = [
-        { img: '/home/neighbor1.png' },
-        { img: '/home/neighbor2.png' },
-        { img: '/home/neighbor3.png' },
-        { img: '/home/neighbor4.png' },
-        { img: '/home/neighbor5.png' },
-    ]
+
 
     return (
         <div className='flex justify-center items-center'>

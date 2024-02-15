@@ -41,12 +41,9 @@ function Banner() {
         <div className='h-screen  '>
             <div className='h-screen  lg:rounded-b-full  bg-[#C3A67D] p-10 relative flex flex-col justify-center items-center md:gap-28 gap-10'>
                 <div className='lg:w-[40%] lg:absolute lg:top-24 lg:left-36  lg:space-y-5 space-y-5 '>
-                    {/* <h4 className='md:text-2xl text-lg text-black font-semibold '>REAL ESTATE</h4> */}
                     <H4 text={'REAL ESTATE'} />
-                    {/* <h4 className='md:text-6xl text-4xl font-bold'>Find a perfect</h4> */}
                     <H2 text={'Find a perfect'} />
                     <H2 text={'home you love..!'} />
-                    {/* <h4 className='md:text-6xl text-4xl font-bold'>home you love..!</h4> */}
                     <div>
                         <p className='text-[#808080]'>
                             Etiam eget elementum elit. Aenean dignissim dapibus vestibulum. Integer a dolor eu sapien sodales vulputate ac in purus.

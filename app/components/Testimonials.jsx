@@ -20,25 +20,7 @@ function Testimonials() {
         })
     }, [])
 
-    const peopleSays = [
-        {
-            says: "I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly to find us the perfect home. We couldn't be happier with our new place!",
-            name: 'Barbara D. Smith'
-        },
-        {
-            says: "I highly recommend Jodi J. Appleby",
-            name: 'Barbara D. Smith'
 
-        },
-        {
-            says: "I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly to find us the perfect home. We couldn't be happier with our new place!",
-            name: 'Barbara D. Smith'
-        },
-        {
-            says: "I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly to find us the perfect home. We couldn't be happier with our new place!",
-            name: 'Barbara D. Smith'
-        },
-    ]
 
     const customArrow = ({ type, onClick, isEdge }) => {
         return (
@@ -62,13 +44,7 @@ function Testimonials() {
                     <Carousal items={fetchedData} component={'testimonials'} customArrow={customArrow} itemsToShow={1} />
 
                     <div className='flex justify-center my-3'>
-                        {/* {peopleSays.map((item, index) => (
-                            <div className=''>
 
-                                <div className='bg-red-800 mx-3 w-[30px] h-[2px]' />
-                            </div>
-                        ))} */}
-                        {/* <span>---- Swipe left or right to view next & prev ----</span> */}
                     </div>
 
                 </div>

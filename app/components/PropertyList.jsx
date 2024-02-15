@@ -2,12 +2,14 @@
 
 import React, { useEffect, useState } from 'react'
 import H4 from './H4'
-import H2 from './H2'
 import H3 from './H3'
 import Image from 'next/image'
 import H6 from './H6'
 import H7 from './H7'
 import userAxios from '@/axios/userAxios'
+import { useRouter } from 'next/navigation'
+import { faBed, faToilet } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function PropertyList() {
 
@@ -29,6 +31,7 @@ function PropertyList() {
         })
     }, [])
 
+    const router = useRouter()
 
     return (
         <div className='md:h-screen p-10 lg:px-32 md:px-24 md:space-y-10 space-y-20 md:py-0 py-20  flex flex-col justify-center'>
@@ -44,7 +47,7 @@ function PropertyList() {
                     <div key={index} className=' '>
                         <div className={`md:min-w-[350px] min-w-60 rounded-2xl relative flex flex-col justify-center overflow-hidden`}>
 
-                            <div className=''>
+                            <div className='' onClick={() => router.push(`/propertyDetails?id=${item._id}`)}>
 
                                 <Image width={400} height={400} src={item?.image} className='hover:scale-110 transition-transform md:w-[350px] md:h-[350px] w-60 h-60 ' alt='img' />
                             </div>
@@ -52,14 +55,19 @@ function PropertyList() {
                                 <h3 className='md:text-sm text-xs  font-semibold '>{item?.sub_title}</h3>
                             </div>
                         </div>
-                        <div className='bg-white mt-3 p-2 '>
-                            <H6 text={`Rs. ${item?.price}`} />
-                            <H7 text={item?.name} />
+                        <div className='bg-white mt-3 p-2 space-y-2'>
+                            <H6 text={item?.name} />
+                            <H7 text={`Rs. ${item?.price}`} />
                             <p className='text-[#808080]'>
                                 {item?.location}
                             </p>
 
+                            <div className='flex text-sm text-gray-400 space-x-10'>
+                                <span><FontAwesomeIcon icon={faBed} className=' text-sm text-gray-400 mr-4' />{item.bed_space}</span>
+                                <span><FontAwesomeIcon icon={faToilet} className=' text-sm text-gray-400 mr-4' />{item.toilet}</span>
+                            </div>
                         </div>
+
                     </div>
 
 

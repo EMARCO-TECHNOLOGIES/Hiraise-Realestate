@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouseSignal } from '@fortawesome/free-solid-svg-icons';
 
 import H4 from './H4'
-import H2 from './H2'
 import Image from 'next/image';
 import H3 from './H3';
 import Text from './Text';
@@ -14,15 +13,8 @@ function WhoWeAre() {
             <div className='lg:w-2/5 w-4/5 space-y-10 md:h-auto '>
                 <H4 text={'WHO WE ARE'} />
 
-                {/* <h3 className='md:text-4xl text-xl font-bold' >
-                    Assisting individuals in locating the appropriate real estate.
-                </h3> */}
                 <H3 text={' Assisting individuals in locating the appropriate real estate.'} />
 
-                {/* <p className='text-[#808080]'>
-                    Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus.
-                    Nulla convallis ipsum molestie nibh malesuada, ac malesuada leo volutpat.
-                </p> */}
                 <Text text={`Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus.
                     Nulla convallis ipsum molestie nibh malesuada, ac malesuada leo volutpat.`} />
 

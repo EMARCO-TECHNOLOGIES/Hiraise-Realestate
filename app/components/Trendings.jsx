@@ -18,14 +18,7 @@ function Trendings() {
         })
     }, [])
 
-    const carousalItems = [
-        { src: '/home/carousal1.png', title: 'Top 10 Home Buying Mistakes to Avoid' },
-        { src: '/home/carousal1.png', title: 'How to Stage Your Home for a Quick Sale' },
-        { src: '/home/carousal1.png', title: '5 Tips for First-Time Home Sellers' },
-        { src: '/home/carousal1.png', title: 'Top 10 Home Buying Mistakes to Avoid' },
-        { src: '/home/carousal1.png', title: 'Top 10 Home Buying Mistakes to Avoid' },
 
-    ]
     const customArrow = ({ type, onClick, isEdge }) => {
         return (
             <button onClick={onClick} disabled={isEdge} className={`absolute z-10 ${type === 'PREV' ? 'lg:-left-20 lg:top-20 md:right-28 md:top-28 top-24 -left-3' : 'lg:-right-16 lg:top-[60px] md:-right-5 md:top-[90px] top-[80px] -right-3 rotate-180'}`}>
