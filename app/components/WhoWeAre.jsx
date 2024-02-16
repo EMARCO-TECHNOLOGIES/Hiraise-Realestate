@@ -15,33 +15,32 @@ function WhoWeAre() {
 
                 <H3 text={' Assisting individuals in locating the appropriate real estate.'} />
 
-                <Text text={`Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus.
-                    Nulla convallis ipsum molestie nibh malesuada, ac malesuada leo volutpat.`} />
+                <Text text={`Through transparency, efficiency, and a dedication to excellence, we aim to exceed expectations and elevate the standard of property management in every community we serve."`} />
 
                 <div className='flex flex-col justify-center items-center space-y-8'>
                     <div className='flex justify-between md:w-[70%] items-center rounded-3xl shadow-lg p-5  space-x-5'>
-                        <div >
+                        {/* <div >
                             <FontAwesomeIcon icon={faHouseSignal} className=' w-10 text-[#C3A67D]' />
-                        </div>
-                        <div>
-                            <h5 text={''} color={''} className='text-[20px] text-[#C3A67D]'>
-                                Donec porttitor euismod
+                        </div> */}
+                        <div className='space-y-2'>
+                            <h5 text={''} color={''} className='text-[20px] text-[#C3A67D] font-semibold'>
+                                Our Vision
                             </h5>
-                            <p className='text-[16px]'>
-                                Nullam a lacinia ipsum, nec dignissim purus. Nulla
+                            <p className='text-[14px] '>
+                                Our vision at New Hiraise Realestate is to redefine property management through innovation, integrity, and personalized service. We aspire to create thriving communities, maximize property value, and provide a seamless experience for owners and tenants alike
                             </p>
                         </div>
                     </div>
                     <div className='flex justify-between md:w-[70%] items-center rounded-3xl shadow-lg p-5 space-x-5'>
-                        <div >
+                        {/* <div >
                             <FontAwesomeIcon icon={faHouseSignal} className=' w-10 text-[#C3A67D]' />
-                        </div>
-                        <div>
-                            <h5 text={''} color={''} className='text-[20px] text-[#C3A67D]'>
-                                Donec porttitor euismod
+                        </div> */}
+                        <div className='space-y-2'>
+                            <h5 text={''} color={''} className='text-[20px] text-[#C3A67D] font-semibold'>
+                                Our mission
                             </h5>
-                            <p className='text-[16px]'>
-                                Nullam a lacinia ipsum, nec dignissim purus. Nulla
+                            <p className='text-[14px]'>
+                                At New Hiraise Realestate , our mission is to revolutionize property management by delivering exceptional service, fostering strong relationships, and embracing cutting-edge technology.
                             </p>
                         </div>
                     </div>

@@ -15,7 +15,7 @@ function OurTeam() {
 
     return (
         <div className='lg:h-screen flex flex-col justify-center items-center space-y-10 p-10'>
-            <div className='w-[70%] flex flex-col justify-center items-center space-y-5'>
+            <div className='w-[80%] flex flex-col justify-center items-center space-y-5'>
                 <H6 text={'INTRODUCE YOURSELF TO'} color={'text-[#C3A67D]'} />
                 <H4 text={'Our Team of Experts'} />
             </div>
