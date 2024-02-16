@@ -37,7 +37,7 @@ function Testimonials() {
 
                     <H4 text={'TESTIMONIALS'} color={'text-[#DE8D3E]'} />
                     <H2 text={'Look What Our Customers Say!'} />
-                    <Text text={'Fusce venenatis tellus a felis scelerisque, non pulvinar est pellentesque. '} />
+                    {/* <Text text={'Fusce venenatis tellus a felis scelerisque, non pulvinar est pellentesque. '} /> */}
                 </div>
                 <div className='lg:w-1/2 md:w-2/3 w-full relative'>
                     <div className='w-10 h-10 bg-[#C3A67D] bg-gradient-to-tl from-white opacity-50 rounded-full absolute bottom-10  right-10  '></div>

@@ -38,9 +38,9 @@ function PropertyList() {
             <div className='lg:w-1/3 md:w-2/3 space-y-5'>
                 <H4 text={'CHECKOUT OUR NEW'} />
                 <H3 text={'Latest Listed Properties'} />
-                <p className='text-[#808080]'>
+                {/* <p className='text-[#808080]'>
                     Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus.
-                </p>
+                </p> */}
             </div>
             <div className='max-w-screen  overflow-x-auto flex space-x-10 scrollbar-hide'>
                 {fetchedData?.map((item, index) => (

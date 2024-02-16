@@ -78,7 +78,7 @@ function Navbar() {
                 <div className="sm:hidden" id="mobile-menu">
                     <div className="space-y-1 px-2 pb-3 pt-2">
                         {navItems.map((item, index) => (
-                            <a key={index} onClick={() => navOnclick(item)} className={`${selectedTab === item.itemName ? 'bg-[#C3A67D]' : null} bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium`} aria-current="page">{item.itemName}</a>
+                            <a key={index} onClick={() => { navOnclick(item), setOpenMenu(!openMenu) }} className={`${selectedTab === item.itemName ? 'bg-[#C3A67D]' : null} bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium`} aria-current="page">{item.itemName}</a>
                         ))}
                     </div>
                 </div>
