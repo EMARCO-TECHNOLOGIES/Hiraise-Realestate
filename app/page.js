@@ -19,7 +19,7 @@ export default function Home() {
       <PropertyList />
       <OurServices />
       {/* <Neighbour /> */}
-      <OurTeam />
+      {/* <OurTeam /> */}
       <Trendings />
       <Testimonials />
       <Footer />
